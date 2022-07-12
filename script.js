@@ -51,11 +51,11 @@ function teamObjectCreation() {
 
         /* Задаємо властивість salary у відповідності до посади*/     
         for (var i = 0; i < positionArr.length; i++) {
-            if(team['employee'+(i+1)].position.indexOf('Junior') == 0){
+            if(team['employee'+(i+1)].position.indexOf('Junior') > -1){
                 team['employee'+(i+1)].salary = randomInteger(500, 1000);
-            } else if (team['employee'+(i+1)].position.indexOf('Middle') == 0) {
+            } else if (team['employee'+(i+1)].position.indexOf('Middle')  > -1) {
                 team['employee'+(i+1)].salary = randomInteger(1500, 2000);
-            } else if (team['employee'+(i+1)].position.indexOf('Senior') == 0) {
+            } else if (team['employee'+(i+1)].position.indexOf('Senior')  > -1) {
                 team['employee'+(i+1)].salary = randomInteger(2500, 3000);
             } else {
                 team['employee'+(i+1)].salary = randomInteger(4000, 4500);
