@@ -117,7 +117,7 @@ function methodsUse() {
             if (employeeNumber > 0 && employeeNumber < Object.keys(team).length){
                 team['employee'+employeeNumber].tellAboutYourSelf();
             } else {
-                console.error('Введіть число віж 1 до ' + (Object.keys(team).length-1)); 
+                console.log('Введіть число віж 1 до ' + (Object.keys(team).length-1)); 
             }
 
         /* Додаємо рекурсію, щоб можна було викликати методи декілька разів */
@@ -131,7 +131,7 @@ function methodsUse() {
             console.info('Вихід з виводу методів');
         } else {
             /* Перевірка введених даних користувачем */ 
-            console.error('Виберіть 1 або 2');
+            console.log('Виберіть 1 або 2');
         }
     }
 
