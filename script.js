@@ -111,7 +111,7 @@ function methodsUse() {
 
     /* Створюємо функцію для вибору одного з двох методів */
     function methodSelection(){
-        var selection = +prompt('1 - Показати інформацію про працівника. 2 - Показати інформацію про команду. Cancel/Скасувати - ВИХІД');
+        var selection = +prompt('1 - Показати інформацію про працівника. 2 - Показати інформацію про команду. Cancel або пустий ОК - ВИХІД');
         if (selection == 1) {
             var employeeNumber = +prompt('Введіть номер працівника, про якого хочете дізнатись інформацію(1-' + (Object.keys(team).length-1)+ ')');
             if (employeeNumber > 0 && employeeNumber < Object.keys(team).length){
@@ -126,12 +126,12 @@ function methodsUse() {
             team.showTeam();
             methodSelection();
 
-        /* Спрацює вихід з рекурсії при клікі на "Cancel" */   
+        /* Спрацює вихід з рекурсії */   
         } else  if(selection == 0) {
-            console.info('Вихід з виводу методів');
+            alert('Вихід з виводу методів');
         } else {
             /* Перевірка введених даних користувачем */ 
-            console.log('Виберіть 1 або 2');
+            alert('Виберіть 1 або 2');
             methodSelection();
         }
     }
