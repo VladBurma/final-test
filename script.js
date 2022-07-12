@@ -49,7 +49,7 @@ function teamObjectCreation() {
                 return Math.round(rand);
             }
 
-        /* Задаємо властивість salary у відповідності до посади*/     
+        /* Задаємо властивість salary у відповідності до посади */     
         for (var i = 0; i < positionArr.length; i++) {
             if(team['employee'+(i+1)].position.indexOf('Junior') > -1){
                 team['employee'+(i+1)].salary = randomInteger(500, 1000);
@@ -117,7 +117,7 @@ function methodsUse() {
             if (employeeNumber > 0 && employeeNumber < Object.keys(team).length){
                 team['employee'+employeeNumber].tellAboutYourSelf();
             } else {
-                console.log('Введіть число віж 1 до ' + (Object.keys(team).length-1)); 
+                console.log('Введіть число від 1 до ' + (Object.keys(team).length-1)); 
             }
 
         /* Додаємо рекурсію, щоб можна було викликати методи декілька разів */
