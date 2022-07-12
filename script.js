@@ -139,4 +139,5 @@ function methodsUse() {
     methodSelection();
 }
 
+/* Викликаємо функцію для показу одного з методів */
 methodsUse();
