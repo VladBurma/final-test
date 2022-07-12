@@ -107,11 +107,11 @@ function methodsUse() {
     console.log('Створений обʼєкт team:');
 
     /* Вивидимо фінальний обʼєкт */
-    console.log(team);
+    console.info(team);
 
     /* Створюємо функцію для вибору одного з двох методів */
     function methodSelection(){
-        var selection = +prompt('1 - Показати інформацію про працівника. 2 - Показати інформацію про команду. Cancel/Скасувати - вихід');
+        var selection = +prompt('1 - Показати інформацію про працівника. 2 - Показати інформацію про команду. Cancel/Скасувати - ВИХІД');
         if (selection == 1) {
             var employeeNumber = +prompt('Введіть номер працівника, про якого хочете дізнатись інформацію(1-' + (Object.keys(team).length-1)+ ')');
             if (employeeNumber > 0 && employeeNumber < Object.keys(team).length){
@@ -128,7 +128,7 @@ function methodsUse() {
 
         /* Спрацює вихід з рекурсії при клікі на "Cancel" */   
         } else  if(selection == 0) {
-            console.log('Вихід з виводу методів');
+            console.info('Вихід з виводу методів');
         } else {
             /* Перевірка введених даних користувачем */ 
             console.error('Виберіть 1 або 2');
