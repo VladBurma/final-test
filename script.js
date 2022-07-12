@@ -132,6 +132,7 @@ function methodsUse() {
         } else {
             /* Перевірка введених даних користувачем */ 
             console.log('Виберіть 1 або 2');
+            methodSelection();
         }
     }
 
